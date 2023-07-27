@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href="/employee/add_student_toInterview"><img src="https://cdn-icons-png.flaticon.com/512/4202/4202259.png">Add Student</a></li>
+                <li><a href="/employee/add_interview"><img src="https://cdn-icons-png.flaticon.com/512/2014/2014701.png">Add Interview</a></li>
+                <li><a href="/placement/download_csv"><img src="https://cdn-icons-png.flaticon.com/128/7268/7268609.png">Download Data</a></li>
+                <li><a href="/employee/logout"><img src="https://cdn-icons-png.flaticon.com/512/9208/9208320.png">Sign Out</a></li>
+            </ul>
+        </section>
+    </header>
+   
+    <!-- 1 )2 section bnane hone first for  student or 2 interview ke liye  -->
+    <!-- 2) dono he section type flex honge  -->
+
+    <section class="info-cards">
+        <div >
+            <% for(var i of student) {%>
+                <div class="card">
+                    <div>
+                        <a href="/employee/edit_student/<%= i._id %>"> <img src="https://cdn-icons-png.flaticon.com/128/1077/1077114.png"></a> 
+                    </div>
+                    <div>
+
+                        <h5>Name : <%= i.name  %></h5>
+                        
+                        <h5>Email : <%= i.email %></h5>
+                        
+                        <h5>Batch : <%= i.batch %></h5>
+                        <h5>Status : <%= i.status %></h5>
+
+
+                    </div>
+
+
+                    
+
+                </div>
+            <% } %>
+        </div>
+    </section>
+
+    <hr class="rounded">
+
+
+    <section class="info-cards">
+        <div >
+            <% for(var i of interview){%>
+                <div class="card" style="padding:20px;">
+                    <div>
+                        <a href="/employee/edit_interview/<%= i._id  %>"><img src="https://cdn-icons-png.flaticon.com/512/2179/2179306.png"></a>
+                    </div>
+                    <div>
+                        <p><%= i.company_name  %></p>
+                        <p><%= i.date %></p>
+                    
+                    </div>
+                    
+
+                </div>
+            <% } %>
+
+                
+        </div>
+
+    </section>
+
+    <h1><a href="/download">Download</a></h1>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

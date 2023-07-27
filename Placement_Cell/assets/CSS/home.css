@@ -1,0 +1,44 @@
+.info-cards{
+    display: flex;
+    flex-direction: row;
+   
+    margin: 20px;
+    
+}
+
+
+.info-cards div{
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:10px;
+    
+    
+
+
+}
+.info-cards div .card{
+    margin: 0px 25px;
+}
+
+.info-cards div .card div{
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+
+.info-cards div .card div img {
+    height: 80px;
+    width: 80px; 
+    border: 2px solid black;
+    border-radius: 50%;
+}

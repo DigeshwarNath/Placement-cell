@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    height: 10vh ;
+    width: 100%;
+    font-family: 'Shantell Sans', cursive;
+    background-color: 		#1ca3ec;
+    color:white;
+    /* margin:20px; */
+    padding:10px;
+}
+
+header section{
+    padding: 15px;
+    margin: 0px 30px;
+    float: right;
+}
+header section ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 0px 8px;
+    font-size: 1.5rem;
+    color:white;
+    /* flex-direction: row; */
+}
+
+header section ul li  a img {
+    height: 25px;
+    width: 25px;
+    /* margin: 10px; */
+    /* padding: 10px; */
+}

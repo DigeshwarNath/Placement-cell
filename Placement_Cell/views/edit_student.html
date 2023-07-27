@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="form.css">
+
+<section>
+    <div class="container">
+            <form action="/employee/edit_student_detail/<%= student._id %>" method="post">
+        
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" value="<%= student.name  %>" required>
+        
+            <label for="email">Email</label>
+            <input type="text" id="lname" name="email" value="<%= student.email %>"  required>
+    
+            <label for="batch">Batch</label>
+            <input type="text" id="lname" name="batch" value="<%= student.batch  %>"  required>
+        
+            <label for="Status" >Status</label>
+            <select id="country" name="Status"  value="<%= student.status  %>" required>
+                <option value="Placed">Placed</option>
+                <option value="Not-Placed">Not Placed</option>
+                <!-- <option value="usa">USA</option> -->
+            </select>
+            
+            <label for="dsa_score">DSA Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="dsa_score"
+                placeholder="DSA Score"
+                required
+                value="<%= student.dsa_score %>" 
+            />
+    
+            <label for="webD_score">Web Development Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="webD_score"
+                placeholder="Web Development Score"
+                value="<%= student.webD_score %>"
+                required
+            />
+    
+            <label for="react_score">React Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="react_score"
+                placeholder="React Score"
+                value="<%= student.react_score %>"
+                required
+            />
+            <label for="company" style="display:block; padding: 8px 0px;">Company Name</label>
+            <input
+            id="fname"
+            class="subInput"
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            value="<%= student.interviews.name %>"
+            />
+            <label for="date" style=" padding: 8px 0px;">Date</label>
+            <input
+            class="subInput"
+            type="date"
+            name="date"
+            placeholder="Interview Date"
+            value="<%= student.interviews.date %>"
+            style="display: inline-block;"
+            />
+            <label for="result" style=" display: block; padding: 0px 8px;">Result</label>
+            <select id="country" name="result" value="<%= student.interviews.result %>">
+                <optgroup label="Result">
+                <option name="selected" value="Selected">Selected</option>
+                <option name="not_selected" value="Not Selected">
+                    Not Selected
+                </option>
+                <option name="on_hold" value="On Hold">On Hold</option>
+                <option name="on_hold" value="On Hold">Didn't Attend</option>
+                <option name="on_hold" value="Interview Pending">
+                    Interview Pending
+                </option>
+                </optgroup>
+            </select>
+          
+        
+            <!-- <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+        
+            <input type="submit" value="EDIT STUDENT DETAILS" style="display: block; margin: 2% 40%; padding: 10px 25px;">
+    
+    
+        
+            </form>
+    </div>
+    
+</section>

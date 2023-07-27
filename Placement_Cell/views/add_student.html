@@ -1,0 +1,210 @@
+
+<link rel="stylesheet" href="form.css">
+<!--- <section>
+
+<div class="form-class">
+    <div class="head" style="margin-top: 20px">
+        <h1>Add Student</h1>
+    </div>
+    
+   
+        <form action="/student/createStudent" method="POST">
+        
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Student name" required />
+        
+       
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Student email" required />
+        
+       
+            <label for="batch">Batch</label>
+            <input type="text" name="batch" placeholder="Student Batch" required />
+        
+       
+            <label for="status">Status</label>
+            <select class="form-input" name="status">
+            <optgroup label="Status" placeholder="Status">
+                <!-- <option name="" value="0">Status</option> 
+                <option name="placed" value="Placed">Placed</option>
+                <option name="Not placed" value="Not Placed">Not Placed</option>
+            </optgroup>
+            </select>
+        
+       
+                <label for="dsa_score">DSA Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="dsa_score"
+                placeholder="DSA Score"
+                required
+            />
+           
+           
+                <label for="webD_score">Web Development Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="webD_score"
+                placeholder="Web Development Score"
+                required
+            />
+          
+                <label for="react_score">React Score</label>
+            <input
+                class="subInput"
+                type="integer"
+                minValue="100"
+                max="100"
+                name="react_score"
+                placeholder="React Score"
+                required
+            />
+         
+         <div class="threeInput threeSubInput">
+            <div class="form-input threeSubInput">
+            <input
+                class="subInput"
+                type="text"
+                name="company"
+                placeholder="Company Name"
+            />
+            </div>
+            <div class="form-input threeSubInput">
+            <input
+                class="subInput"
+                type="date"
+                name="date"
+                placeholder="Interview Date"
+            />
+            </div>
+            <div class="form-input threeSubInput">
+            <select class="subInput" class="form-input" name="result">
+                <optgroup label="Result">
+                <option name="selected" value="Selected">Selected</option>
+                <option name="not_selected" value="Not Selected">
+                    Not Selected
+                </option>
+                <option name="on_hold" value="On Hold">On Hold</option>
+                <option name="on_hold" value="On Hold">Didn't Attend</option>
+                <option name="on_hold" value="Interview Pending">
+                    Interview Pending
+                </option>
+                </optgroup>
+            </select>
+            </div>
+        </div> -->
+    
+       
+            <!-- <input type="Submit" value="Add Student" /> -->
+     
+      
+        <!-- <button>Submit</button> 
+        </form>
+</div>
+
+
+
+</section> -->
+
+
+<section>
+<div class="container">
+        <form action="/employee/add_student_to_cell" method="post">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name.." required>
+    
+        <label for="email">Last Name</label>
+        <input type="text" id="lname" name="email" placeholder="abc@gmail.com"  required>
+
+        <label for="batch">Batch</label>
+        <input type="text" id="lname" name="batch" placeholder="Batch"  required>
+    
+        <label for="Status" >Status</label>
+        <select id="country" name="Status"  required>
+            <option value="Placed">Placed</option>
+            <option value="Not-Placed">Not Placed</option>
+            <!-- <option value="usa">USA</option> -->
+        </select>
+        
+        <label for="dsa_score">DSA Score</label>
+        <input
+            class="subInput"
+            type="integer"
+            minValue="100"
+            max="100"
+            name="dsa_score"
+            placeholder="DSA Score"
+            required
+        />
+
+        <label for="webD_score">Web Development Score</label>
+        <input
+            class="subInput"
+            type="integer"
+            minValue="100"
+            max="100"
+            name="webD_score"
+            placeholder="Web Development Score"
+            required
+        />
+
+        <label for="react_score">React Score</label>
+        <input
+            class="subInput"
+            type="integer"
+            minValue="100"
+            max="100"
+            name="react_score"
+            placeholder="React Score"
+            required
+        />
+        <label for="company" style="display:block; padding: 8px 0px;">Company Name</label>
+        <input
+        id="fname"
+        class="subInput"
+        type="text"
+        name="company"
+        placeholder="Company Name"
+        />
+        <label for="date" style=" padding: 8px 0px;">Date</label>
+        <input
+        class="subInput"
+        type="date"
+        name="date"
+        placeholder="Interview Date"
+        style="display: inline-block;"
+        />
+        <label for="result" style=" display: block; padding: 8px 0px;">Result</label>
+        <select class="subInput" class="form-input" name="result">
+            <optgroup label="Result">
+            <option name="selected" value="Selected">Selected</option>
+            <option name="not_selected" value="Not Selected">
+                Not Selected
+            </option>
+            <option name="on_hold" value="On Hold">On Hold</option>
+            <option name="on_hold" value="On Hold">Didn't Attend</option>
+            <option name="on_hold" value="Interview Pending">
+                Interview Pending
+            </option>
+            </optgroup>
+        </select>
+      
+    
+        <!-- <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+    
+        <input type="submit" value="ADD STUDENT" style="display: block; margin: 2% 40%; padding: 10px 25px;">
+
+
+    
+        </form>
+</div>
+
+</section>
